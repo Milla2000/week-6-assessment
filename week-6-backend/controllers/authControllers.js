@@ -12,7 +12,7 @@ dotenv.config()
 const registerUsers = async (req,res) =>{
     try {
         // console.log("why now");
-        createUsersTable()
+        // createUsersTable()
 
         const id = v4();
         // console.log("why now");
