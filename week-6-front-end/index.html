@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitu Community Club Registration</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jitu Community Club</h1>
+        <h2>Cohort Registration Form</h2>
+        <form id="registrationForm">
+            <h3 class="notifications-reg"></h3>
+            <div class="form-group">
+                <label class="label" for="fullName">Full Name:</label>
+                <input class="input" type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label class="label" for="email">Email:</label>
+                <input class="input" type="email" id="email" name="email" required
+                    pattern="[a-zA-Z]+[.][a-zA-Z]+@thejitu\.com">
+                <small>Please enter an email in the format fname.lname@thejitu.com</small>
+            </div>
+            <div class="form-group">
+                <label class="label" for="password">Password:</label>
+                <input class="input" type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label class="label" for="confirmPassword">Confirm Password:</label>
+                <input class="input" type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="form-group">
+                <label class="label" for="cohortNumber">Cohort Number:</label>
+                <select class="input" id="cohortNumber" name="cohortNumber" required>
+                    <option value="" disabled selected>Select a cohort</option>
+                    <option value="1">Cohort 1</option>
+                    <option value="2">Cohort 2</option>
+                    <option value="3">Cohort 3</option>
+                    <option value="4">Cohort 4</option>
+                    <option value="5">Cohort 5</option>
+                </select>
+            </div>
+          
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
